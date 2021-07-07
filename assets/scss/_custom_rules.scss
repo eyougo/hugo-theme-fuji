@@ -1,1 +1,7 @@
 // Override CSS rules with that file
+.sidebar-weixin {
+
+  & > img {
+    width: 172px;
+  }
+}

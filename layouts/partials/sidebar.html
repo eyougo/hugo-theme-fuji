@@ -1,4 +1,10 @@
 <aside class="col-12 col-md-3 float-left sidebar">
+    {{ if .Site.Params.weixinSidebar}}
+    <div class="sidebar-item sidebar-weixin">
+      {{ .Site.Params.weixinSidebar}}
+      <img class="lazyload" src="{{ .Site.Params.weixinImage}}" />
+    </div>
+    {{ end }}
     <!-- pages -->
     <div class="sidebar-item sidebar-pages">
         <h3>{{ i18n "sidebarPages" }}</h3>

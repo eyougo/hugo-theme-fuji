@@ -5,6 +5,9 @@
             {{ with .Site.Params.subTitle }}
             <span class="title-sub">{{ . }}</span>
             {{ end }}
+            <div class="header-weixin">
+              <img class="lazyload" src="{{ .Site.Params.weixinHeaderImage}}" />
+            </div>
         </div>
     </div>
 </header>

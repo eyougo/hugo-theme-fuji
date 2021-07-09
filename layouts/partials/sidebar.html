@@ -2,7 +2,10 @@
     {{ if .Site.Params.weixinSidebar}}
     <div class="sidebar-item sidebar-weixin">
       {{ .Site.Params.weixinSidebar}}
-      <img class="lazyload" src="{{ .Site.Params.weixinImage}}" />
+      <br/>
+      <img class="lazyload" src="{{ .Site.Params.weixinSidebarImage}}" />
+      <br/>
+      <h3> {{ .Site.Params.weixinName}} </h3>
     </div>
     {{ end }}
     <!-- pages -->

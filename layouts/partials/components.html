@@ -11,6 +11,15 @@
 </div>
 <aside class="sidebar-mobile" style="display: none;">
   <div class="sidebar-wrapper">
+    {{ if .Site.Params.weixinSidebar}}
+    <div class="sidebar-item sidebar-weixin">
+      {{ .Site.Params.weixinSidebar}}
+      <br/>
+      <img class="lazyload" src="{{ .Site.Params.weixinSidebarImage}}" />
+      <br/>
+      <h3> {{ .Site.Params.weixinName}} </h3>
+    </div>
+    {{ end }}
     <!-- pages -->
     <div class="sidebar-item sidebar-pages">
         <h3>{{ i18n "sidebarPages" }}</h3>

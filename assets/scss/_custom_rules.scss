@@ -1,7 +1,22 @@
 // Override CSS rules with that file
-.sidebar-weixin {
-
+.sidebar-weixin{
   & > img {
-    width: 172px;
+    width: 90%;
+    max-width: 215px;
+  }
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.header-weixin {
+  padding: 1rem 0.5rem 0 0.5rem;
+  & > img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $width-sm) {
+  .header-weixin {
+    display: none;
   }
 }

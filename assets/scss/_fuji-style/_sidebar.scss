@@ -28,13 +28,13 @@
   }
 }
 
-@media screen and (max-width: $width-md) {
+@media screen and (max-width: $width-md - 1px) {
   .sidebar {
     display: none !important;
   }
 }
 
-@media screen and (max-width: $width-md) {
+@media screen and (max-width: $width-md - 1px) {
   .sidebar-mobile {
     width: 70%;
     position: fixed;

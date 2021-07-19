@@ -12,6 +12,7 @@
                 | {{ i18n "footerPoweredFront" }}<a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
                    target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
                                                     target="_blank">Hugo</a>{{ i18n "footerPoweredEnd" }}
+                {{ with .Site.Params.icp }} | <a href="https://beian.miit.gov.cn/" target="_blank">{{ . }}</a> {{ end }}
             </span>
         </div>
     </div>
